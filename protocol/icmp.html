@@ -1,0 +1,242 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/network.png"/>
+        <meta property="og:title" content="Δίκτυα Υπολογιστών | ICMP">
+        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/network/javascript/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+    <body class="network">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                            <td><a href="https://github.com/GrCodeClub/grcodeclub.github.io/edit/main/network/protocol/ip.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+           
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><span class="header_text">  GrCode Club </span></h1></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <a href="../protocol.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                    <h1 class="title">Internet Control Message Protocol (ICMP)</h1>
+                    <p>Χρησιμοποιείται για τη μεταφορά μηνυμάτων ελέγχου και σφαλμάτων στο Διαδίκτυο</p>
+                    <h3 class="highlight_blue">Λίστα μηνυμάτων ελέγχου ICMP</h3>
+                    
+                    <div style="display: flex;">
+                        <ul>
+                            <li>0 - Echo Reply</li>
+                            <li>1 - Reserved</li>
+                            <li>2 - Reserved</li>
+                            <li>3 - Destination Unreachable</li>
+                            <li>4 - Source Quench</li>
+                            <li>5 - Redirect Message</li>
+                            <li>6 - Alternate Host Address</li>
+                            <li>7 - Reserved</li>
+                            <li>8 - Echo Request</li>
+                            <li>9 - Router Advertisement</li>
+                            <li>10 - Router Solicitation</li>
+                            <li>11 - Time Exceeded</li>
+                            <li>12 - Parameter Problem</li>
+                            <li>13 - Timestamp</li>
+                            <li>14 - Timestamp Reply</li>
+                        </ul>
+                        <ul>
+                            <li>15 - Information Request</li>
+                            <li>16 - Information Reply</li>
+                            <li>17 - Address Mask Request</li>
+                            <li>18 - Address Mask Reply</li>
+                            <li>19 - Reserved for security</li>
+                            <li>20-29 - Reserved for robustness experiment</li>
+                            <li>30 - Traceroute</li>
+                            <li>31 - Datagram Conversion Error</li>
+                            <li>32 - Mobile Host Redirect</li>
+                            <li>33 - IPv6 Where-Are-You</li>
+                            <li>34 - IPv6 Here-I-Am</li>
+                            <li>35 - Mobile Registration Request</li>
+                            <li>36 - Mobile Registration Reply</li>
+                            <li>37 - Domain Name Request</li>
+                            <li>38 - Domain Name Reply</li>
+                            <li>39 - SKIP Algorithm Discovery Protocol, Simple Key-Management for Internet Protocol</li>
+                            <li>40 - Photuris, Security failures</li>
+                            <li>41 - ICMP for experimental mobility protocols such as Seamoby [RFC4065]</li>
+                            <li>42-255 - Reserved</li>
+                        </ul>
+
+                        
+                    </div>
+
+                    <br>
+                    <h2 class="highlight_blue">Δομή πακέτου ICMP</h2>
+                    <table style="text-align: center; background-color: white;">
+
+                            <tr>
+                                <th width="4%">+</th>
+                                <th  bgcolor="lightgrey" colspan="4" width="12%">Bits 0–3</th>
+                                <th  bgcolor="lightgrey" colspan="4" width="12%">4–7</th>
+                                <th  bgcolor="lightgrey" colspan="8" width="24%">8–15</th>
+                                <th  bgcolor="lightgrey" colspan="3" width="9%">16–18</th>
+                                <th  bgcolor="lightgrey" colspan="13" width="39%">19–31</th>
+                            </tr>
+                            <tr>
+                                <th  bgcolor="lightgrey">0</th>
+                                <td  style="border: 2px solid #161515;" colspan="4">Version</td>
+                                <td  style="border: 2px solid #161515;" colspan="4">IHL</td>
+                                <td  style="border: 2px solid #161515;" colspan="8">TOS/DSCP/ECN</td>
+                                <td  style="border: 2px solid #161515;" colspan="16">Total Length</td>
+                            </tr>
+                            <tr>
+                                <th  bgcolor="lightgrey">32</th>
+                                <td style="border: 2px solid #161515;" colspan="16">Identification</td>
+                                <td style="border: 2px solid #161515;" colspan="3">Flags</td>
+                                <td style="border: 2px solid #161515;" colspan="13">Fragment Offset</td>
+                            </tr>
+                            <tr>
+                                <th  bgcolor="lightgrey">64</th>
+                                <td style="border: 2px solid #161515;" colspan="8">Time to Live</td>
+                                <td style="border: 2px solid #161515;" colspan="8">Protocol</td>
+                                <td style="border: 2px solid #161515;" colspan="16">IP Header Checksum</td>
+                            </tr>
+                            <tr>
+                                <th  bgcolor="lightgrey">96</th>
+                                <td style="border: 2px solid #161515;" colspan="32">Source Address</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor="lightgrey">128</th>
+                                <td style="border: 2px solid #161515;" colspan="32">Destination Address</td>
+                            </tr>
+                            <tr>
+                                <th bgcolor="lightgrey">160</th>
+                                <td style="border: 2px solid #161515;" bgcolor="lightblue" colspan="8">Type</td>
+                                <td style="border: 2px solid #161515;" bgcolor="lightblue" colspan="8">Code</td>
+                                <td style="border: 2px solid #161515;" bgcolor="lightblue" colspan="16">Checksum </td>
+                            </tr>
+                            <tr>
+                                <th bgcolor="lightgrey">192</th>
+                                <td style="border: 2px solid #161515;" bgcolor="lightblue" colspan="16">ID</td>
+                                <td style="border: 2px solid #161515;" bgcolor="lightblue" colspan="16">Sequence</td>
+                            </tr>
+                        </table>
+                        <p><u>Type</u> Ο κωδικός του τύπου μηνύματος ICMP.
+                            <br><br>
+                            <u>Checksum</u> Το πεδίο αυτό χρησιμοποιείται για τον έλεγχο σφαλμάτων.
+                            <br><br>
+                            <u>ID</u> Η τιμή ID του πακέτου, η οποία επιστρέφεται στον υπολογιστή που δημιούργησε το πακέτο στην περίπτωση που έχουμε απάντηση ECHO REPLY.
+                            <br><br>
+                            <u>Sequence</u> Αυτό το πεδίο περιέχει την τιμή σειράς του πακέτου και επιστρέφεται στον υπολογιστή που δημιούργησε το πακέτο στην περίπτωση που έχουμε απάντηση ECHO REPLY.
+                            <br>   <br>
+                            <u>Code</u> Το πεδίο αυτό χρησιμοποιείται ως επέκταση του προηγούμενου. Για παράδειγμα εάν το πεδίο Type περιέχει την τιμή 3 (Destination Unreachable), τότε το πεδίο αυτό μπορεί να περιέχει έναν κωδικό από το 1 έως το 15 που να δίνει τον λόγο για τον οποίο ο υπολογιστής που ψάχνουμε είναι εκτός δικτύου.
+                        </p>
+
+                        <table class="style2">
+                            <tr>
+                              <th>Type</th>
+                              <th>Code</th>
+                              <th>Περιγραφή</th>
+                            </tr>
+                            <tr>
+                              <td>0</td>
+                              <td>0</td>
+                              <td>Echo Reply (Ping)<br> Απάντηση σε ένα μήνυμα Echo Request.</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>0-15</td>
+                              <td>Destination Unreachable <br> Υποδεικνύει ότι ο προορισμός δεν είναι προσβάσιμος, με διάφορους κωδικούς για να περιγράψει τον λόγο.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>0-3</td>
+                                <td>Redirect  <br> Ενημερώνει τον αποστολέα ότι ο δρομολογητής της δικτύωσης θα πρέπει να αλλάξει τη διαδρομή.</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>0</td>
+                                <td>Echo Request (Ping)</td>
+                            </tr>
+                            <tr>
+                              <td>11</td>
+                              <td>0-1</td>
+                              <td>Time Exceeded <br> Υποδεικνύει ότι το πακέτο δεδομένων δεν μπορεί να παραδοθεί εντός ενός χρονικού ορίου.</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>0-2</td>
+                                <td>Parameter Problem <br> Υποδεικνύει ότι υπάρχει πρόβλημα με τα δεδομένα της κεφαλίδας του πακέτου.</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>0</td>
+                                <td>Timestamp Request</td>
+                              </tr>
+                              <tr>
+                                <td>14</td>
+                                <td>0</td>
+                                <td>Timestamp Reply</td>
+                              </tr>
+                              <tr>
+                                <td>15</td>
+                                <td>0</td>
+                                <td>Information Request</td>
+                              </tr>
+                              <tr>
+                                <td>16</td>
+                                <td>0</td>
+                                <td>Information Reply</td>
+                              </tr>
+                        </table>
+                </div><!-- Τέλος Background Κειμένου-->
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
