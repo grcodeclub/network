@@ -6,14 +6,14 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.github.io/network/">Δίκτυα Υπολογιστών</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.github.io/network/κατάλογοι.html">Κατάλογοι</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/network/post/κατάλογοι.html">Κατάλογοι</a></li>';
      $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/network/protocol.html">Πρωτόκολλα</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/network/post/protocol.html">Πρωτόκολλα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     
-    menuLink = '<li><a href="https://grcodeclub.github.io/network/post.html">Έγγραφα</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.github.io/network/post/post.html">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li><a href="https://grcodeclub.github.io/cloud/">Cloud</a></li>';
