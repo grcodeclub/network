@@ -11,7 +11,9 @@ $(document).ready(function() {
     
     menuLink = '<li><a href="https://grcodeclub.github.io/network/post/protocol.html">Πρωτόκολλα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-
+    
+    menuLink = '<li><a href="https://grcodeclub.github.io/network/post/ορολογία.html">Ορολογία</a></li>';
+    $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.github.io/network/post/post.html">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
