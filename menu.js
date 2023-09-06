@@ -1,9 +1,9 @@
 $(document).ready(function() {
     
-    var menuLink = ' <li><a href="https://grcodeclub.github.io/network/">Δίκτυα Υπολογιστών</a></li>';
+    var menuLink = ' <li><a href="https://grcodeclub.github.io/system">Αρχική Σελίδα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.github.io">GrCode Club</a></li>';
+    menuLink = ' <li><a href="https://grcodeclub.github.io/network/">Δίκτυα Υπολογιστών</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li><a href="https://grcodeclub.github.io/network/κατάλογοι.html">Κατάλογοι</a></li>';
