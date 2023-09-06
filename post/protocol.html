@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/network.png"/>
+        <meta property="og:title" content="Δίκτυα Υπολογιστών | Πρωτόκολλα">
+        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/network/post/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+     <body class="network">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                            <td><a href="https://github.com/GrCodeClub/network/edit/main/protocol.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+           
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <table>
+                        <tr>
+                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
+                        </tr>
+                    </table> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <div>
+                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                    <div id="sidebarMenu">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div>
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                    <h1 class="title">Πρωτόκολλα</h1>
+                    <p>
+                        Τα πρωτόκολλα στα δίκτυα αναφέρονται σε σύνολα κανόνων και συμβάσεων που καθορίζουν τον τρόπο με τον οποίο οι διάφορες συσκευές 
+                        και υπολογιστές επικοινωνούν και ανταλλάσσουν πληροφορίες μέσα σε ένα δίκτυο. Τα πρωτόκολλα καθορίζουν τον τύπο των δεδομένων που
+                         μπορούν να ανταλλάσσονται, τη μορφή και τη σειρά των μηνυμάτων, καθώς και τους κανόνες για τον έλεγχο σφαλμάτων, την δρομολόγηση, 
+                         την ασφάλεια και πολλά άλλα. </p>
+                <div  class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
+                <br>
+                <table ID="table" class="style2" style="margin-left: 10px; margin-right: 10px; margin-bottom: 100px;">
+                    <tr>
+                        <td>Πρωτόκολλο</td>
+                        <td>Περιγραφή</td>
+                    </tr>
+                    <tr class="style2">
+                        <td><a href="./protocol/ip.html" class="link_open">IP</a></td>
+                        <td>Internet Protocol <br> Χρησιμοποιείται για τη μεταφορά πακέτων δεδομένων από ένα σημείο στο Διαδίκτυο σε άλλο</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>IPv6</td>
+                        <td>Internet Protocol version 6 <br>Η επόμενη γενιά του πρωτοκόλλου IP που χρησιμοποιεί μεγαλύτερη διευθυνσιοδότηση και άλλες βελτιώσεις</td>
+                    </tr>
+                    <tr class="style2">
+                        <td><a href="./protocol/icmp.html" class="link_open">ICMP</a></td>
+                        <td>Internet Control Message Protocol <br> Χρησιμοποιείται για τη μεταφορά μηνυμάτων ελέγχου και σφαλμάτων στο Διαδίκτυο</td>
+                    </tr>
+                    <tr class="style2">
+                        <td><a href="./protocol/arp.html" class="link_open">ARP</a></td>
+                        <td>Address Resolution Protocol <br> Χρησιμοποιείται για τη εντοπισμό μιας διεύθυνσης MAC με βάση την διεύθυνση IP</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>RARP</td>
+                        <td>Reverse Address Resolution Protocol <br> Χρησιμοποιείται για την αντίστροφη μετατροπή μιας διεύθυνσης MAC σε αντίστοιχη διεύθυνση IP</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>IPX</td>
+                        <td>Internetwork Packet Exchange <br> Χρησιμοποιείται στα δίκτυα Novell για τη μεταφορά πακέτων δεδομένων</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>IGMP</td>
+                        <td>Internet Group Management Protocol <br> Χρησιμοποιείται για τη διαχείριση ομάδων σε πρωτόκολλα multicast</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>TCP</td>
+                        <td>Transmission Control Protocol <br> Χρησιμοποιείται για την αξιόπιστη παράδοση πακέτων δεδομένων μεταξύ εφαρμογών</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>UDP</td>
+                        <td>User Datagram Protocol <br> Χρησιμοποιείται για τη μη αξιόπιστη παράδοση πακέτων δεδομένων μεταξύ εφαρμογών</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>ICMPv6</td>
+                        <td>Internet Control Message Protocol version 6 <br> Η έκδοση του πρωτοκόλλου ICMP που χρησιμοποιείται στο IPv6</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>OSPF</td>
+                        <td>Open Shortest Path First <br> Ένα πρωτόκολλο δρομολόγησης που χρησιμοποιείται στα δίκτυα IP</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>BGP</td>
+                        <td>Border Gateway Protocol <br> Ένα πρωτόκολλο δρομολόγησης που χρησιμοποιείται για την ανταλλαγή διαδρομών μεταξύ διαφορετικών αυτόνομων συστημάτων</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>FTP</td>
+                        <td>File Transfer Protocol <br> Χρησιμοποιείται για τη μεταφορά αρχείων μεταξύ διακομιστών και πελατών στο Διαδίκτυο</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>HTTP</td>
+                        <td>Hypertext Transfer Protocol <br> Χρησιμοποιείται για τη μεταφορά ιστοσελίδων και δεδομένων μεταξύ διακομιστών και πελατών</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>SMTP</td>
+                        <td>Simple Mail Transfer Protocol <br> Χρησιμοποιείται για την αποστολή και παράδοση ηλεκτρονικού ταχυδρομείου</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>DHCP</td>
+                        <td>Dynamic Host Configuration Protocol <br> Χρησιμοποιείται για την αυτόματη ανάθεση διευθύνσεων IP σε συσκευές σε ένα δίκτυο</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>SNMP</td>
+                        <td>Simple Network Management Protocol <br> Χρησιμοποιείται για την διαχείριση και παρακολούθηση δικτύων, συσκευών και υπηρεσιών</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>RIP</td>
+                        <td>Routing Information Protocol <br> Ένα απλό πρωτόκολλο δρομολόγησης που χρησιμοποιείται για την ανταλλαγή πληροφοριών δρομολόγησης μεταξύ δρομολογητών</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>OSPF</td>
+                        <td>Open Shortest Path First <br> Ένα πιο προηγμένο πρωτόκολλο δρομολόγησης που χρησιμοποιείται για τον υπολογισμό της βέλτιστης διαδρομής σε μεγάλα δίκτυα</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>IPSec</td>
+                        <td>Internet Protocol Security <br> Χρησιμοποιείται για την ασφαλή μετάδοση πακέτων δεδομένων μέσω του Διαδικτύου</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>VLAN </td>
+                        <td>Virtual Local Area Network <br> Χρησιμοποιείται για τη δημιουργία εικονικών δικτύων μέσω λογικής απομόνωσης και ομαδοποίησης συσκευών</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>PPP</td>
+                        <td>Point-to-Point Protocol <br> Χρησιμοποιείται για τη σύνδεση δικτύων μέσω γραμμής τηλεφώνου ή άλλου μέσου επικοινωνίας</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>MPLS</td>
+                        <td>Multiprotocol Label Switching <br> Ένα πρωτόκολλο δρομολόγησης που χρησιμοποιείται για τη δημιουργία εικονικών ιδιωτικών δικτύων</td>
+                    </tr>
+                    <tr class="style2">
+                        <td>VRRP</td>
+                        <td>Virtual Router Redundancy Protocol <br> Χρησιμοποιείται για τη δημιουργία ενός εικονικού δρομολογητή με σκοπό την αποφυγή διακοπής της λειτουργίας σε περίπτωση αποτυχίας ενός δρομολογητή</td>
+                    </tr>
+                </table>
+                          <script src="https://grcodeclub.github.io/javascript/search_table_row_cells_0.js"></script>
+                </div><!-- Τέλος Background Κειμένου-->
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+        </footer>
+    </body>
+</html>
