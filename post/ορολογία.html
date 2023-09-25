@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -9,7 +10,7 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
-        <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/card.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
@@ -56,73 +57,56 @@
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                        <h1 class="title">Ορολογία <br>
-                            <input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/>
-                        </h1>
-                         <table id="table" class="style2" style="margin-bottom: 100px;">
-                            <tr>
-                                <td>Όρος</td>
-                                <td>Περιγραφή</td>
-                            </tr>
-                            <tr class="style2" >
-                                <td>Δίκτυο (Network)</td>
-                                <td>Ένα δίκτυο αναφέρεται σε ένα σύνολο συνδεδεμένων συσκευών που μπορούν να επικοινωνούν μεταξύ τους.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>Κόμβος (Node)</td>
-                                <td>Ένας κόμβος αναφέρεται σε μια συσκευή ή ένα σημείο στο δίκτυο, όπως υπολογιστής ή router.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>Δρομολογητής (Router)</td>
-                                <td>Ένα Router είναι μια συσκευή που συνδέει διάφορα δίκτυα μεταξύ τους και μπορεί να αποφασίζει τη διαδρομή που πρέπει να ακολουθήσουν τα IP πακέτα.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>Πρωτόκολλο (Protocol)</td>
-                                <td>Ένα πρωτόκολλο αναφέρεται σε ένα σύνολο κανόνων και διαδικασιών που χρησιμοποιούνται για την επικοινωνία μεταξύ δικτύων και συσκευών.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>IP</td>
-                                <td>Internet Protocol <br> Το IP είναι ένα πρωτόκολλο διαδικτύου που χρησιμοποιείται για τη μεταφορά δεδομένων μεταξύ συσκευών σε ένα δίκτυο. Το IPv4 και το IPv6 είναι οι δύο κύριες εκδόσεις του πρωτοκόλλου IP.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>MAC Διεύθυνση</td>
-                                <td>Media Access Control <br> Η διεύθυνση MAC αναφέρεται είναι ένα μοναδικό αναγνωριστικό που ανατίθεται σε κάθε δικτυακή κάρτα. Χρησιμοποιείται για την αναγνώριση μιας συσκευής σε ένα LAN.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>DHCP</td>
-                                <td>Dynamic Host Configuration Protocol <br> Το DHCP είναι ένα πρωτόκολλο που χρησιμοποιείται για την αυτόματη διαμόρφωση των διευθύνσεων IP σε συσκευές σε ένα δίκτυο.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>DNS</td>
-                                <td>Domain Name System <br>Το DNS είναι ένα σύστημα που αντιστοιχεί τα ονόματα (domain names) με τις διευθύνσεις IP.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>Firewall</td>
-                                <td> Ένας τείχος προστασίας είναι μια ασφαλής ζώνη μεταξύ διαφορετικών δικτύων, που επιτρέπει ή αποκλείει τη διέλευση των δεδομένων βάσει προκαθορισμένων κανόνων ασφαλείας.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>VPN</td>
-                                <td>Virtual Private Network <br> Ένα εικονικό ιδιωτικό δίκτυο.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>Πρωτόκολλο TCP/IP</td>
-                                <td>Το TCP/IP αναφέρεται στο σύνολο των πρωτοκόλλων που χρησιμοποιούνται για τη μεταφορά δεδομένων στο Διαδίκτυο.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>VLAN</td>
-                                <td>Virtual Local Area Network</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>ISP</td>
-                                <td>Internet Service Provider <br> Ένας πάροχος υπηρεσιών Διαδικτύου είναι μια εταιρεία ή οργανισμός που παρέχει πρόσβαση στο Διαδίκτυο στους χρήστες του. Ο ISP παρέχει συνήθως σύνδεση στο Διαδίκτυο μέσω καλωδίου, DSL, οπτικών ινών ή ασύρματων τεχνολογιών.</td>
-                            </tr>
-                            <tr class="style2">
-                                <td>NAT</td>
-                                <td>Network Address Translation <br>Είναι η τεχνική που χρησιμοποιείται για να μετατρέψει μια διεύθυνση IP σε άλλη διεύθυνση IP κατά τη διέλευση από ένα δίκτυο σε ένα άλλο.</td>
-                            </tr>
-                         </table>
-            
-                          <script src="https://grcodeclub.github.io/javascript/search/search_table_row_cells_0.js"></script>
+                        <h1 class="title">Ορολογία </h1>
+                        <div class="dropcard">
+                            <button class="showCardButton">➕ Δίκτυο (Network)</button>
+                            <div class="card-content">
+                               <p> Ένα δίκτυο αναφέρεται σε ένα σύνολο συνδεδεμένων συσκευών που μπορούν να επικοινωνούν μεταξύ τους.</p>
+                            </div></div>
+
+                            <div class="dropcard">
+                            <button class="showCardButton">➕ Κόμβος (Node)</button>
+                            <div class="card-content">
+                                <p>Ένας κόμβος αναφέρεται σε μια συσκευή ή ένα σημείο στο δίκτυο, όπως υπολογιστής ή router.</p>
+                            </div></div>
+
+                            <div class="dropcard">
+                                <button class="showCardButton">➕ Δρομολογητής (Router)</button>
+                                <div class="card-content">
+                                    <p>Ένα Router είναι μια συσκευή που συνδέει διάφορα δίκτυα μεταξύ τους και μπορεί να αποφασίζει τη διαδρομή που πρέπει να ακολουθήσουν τα IP πακέτα.</p>
+                                </div></div>
+
+                            <div class="dropcard">
+                                <button class="showCardButton">➕ Πρωτόκολλο (Protocol)</button>
+                                <div class="card-content">
+                                    <p>Ένα πρωτόκολλο αναφέρεται σε ένα σύνολο κανόνων και διαδικασιών που χρησιμοποιούνται για την επικοινωνία μεταξύ δικτύων και συσκευών.</p>
+                                </div></div>
+
+                                <div class="dropcard">
+                                    <button class="showCardButton">➕ Internet Protocol (IP)</button>
+                                    <div class="card-content">
+                                        <p>Το IP είναι ένα πρωτόκολλο διαδικτύου που χρησιμοποιείται για τη μεταφορά δεδομένων μεταξύ συσκευών σε ένα δίκτυο. Το IPv4 και το IPv6 είναι οι δύο κύριες εκδόσεις του πρωτοκόλλου IP.</p>
+                                    </div></div>   
+                                    
+                                <div class="dropcard">
+                                    <button class="showCardButton">➕ Media Access Control (MAC)</button>
+                                    <div class="card-content">
+                                        <p>Η διεύθυνση MAC αναφέρεται είναι ένα μοναδικό αναγνωριστικό που ανατίθεται σε κάθε δικτυακή κάρτα. Χρησιμοποιείται για την αναγνώριση μιας συσκευής σε ένα LAN.</p>
+                                    </div></div> 
+                                
+                                <div class="dropcard">
+                                    <button class="showCardButton">➕ Internet Service Provider (ISP)</button>
+                                    <div class="card-content">
+                                        <p>Ένας πάροχος υπηρεσιών Διαδικτύου είναι μια εταιρεία ή οργανισμός που παρέχει πρόσβαση στο Διαδίκτυο στους χρήστες του. Ο ISP παρέχει συνήθως σύνδεση στο Διαδίκτυο μέσω καλωδίου, DSL, οπτικών ινών ή ασύρματων τεχνολογιών.</p>
+                                    </div></div> 
+                                
+                                <div class="dropcard">
+                                    <button class="showCardButton">➕ Network Address Translation (NAT)</button>
+                                    <div class="card-content">
+                                        <p>Είναι η τεχνική που χρησιμοποιείται για να μετατρέψει μια διεύθυνση IP σε άλλη διεύθυνση IP κατά τη διέλευση από ένα δίκτυο σε ένα άλλο.</p>
+                                    </div></div> 
+                                           
+                            <script src="https://grcodeclub.github.io/js/dropdown-content.js"></script>
                 </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
