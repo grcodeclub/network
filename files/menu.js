@@ -6,16 +6,16 @@ $(document).ready(function() {
     menuLink = ' <li><a href="https://grcodeclub.gr/network/">Δίκτυα Υπολογιστών</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
-    menuLink = '<li><a href="https://grcodeclub.gr/network/post/κατάλογοι">Κατάλογοι</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/network/κατάλογοι">Κατάλογοι</a></li>';
      $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/network/post/protocol">Πρωτόκολλα</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/network/protocol">Πρωτόκολλα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/network/post/ορολογία">Ορολογία</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/network/ορολογία">Ορολογία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/network/post/list">Έγγραφα</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/network/list">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li><a href="https://grcodeclub.gr/cloud/">Cloud</a></li>';
