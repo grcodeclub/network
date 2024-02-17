@@ -12,10 +12,10 @@ $(document).ready(function() {
     menuLink = '<li><a href="https://grcodeclub.gr/network/protocol">Πρωτόκολλα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/network/ορολογία">Ορολογία</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/network/orologia">Ορολογία</a></li>';
     $('.sidebarMenuInner').append(menuLink);
     
-    menuLink = '<li><a href="https://grcodeclub.gr/network/post">Έγγραφα</a></li>';
+    menuLink = '<li><a href="https://grcodeclub.gr/network/more">Έγγραφα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
 
     menuLink = '<li><a href="https://grcodeclub.gr/cloud/">Cloud</a></li>';
