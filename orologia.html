@@ -3,17 +3,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://grcodeclub.gr/file/background/network.png"/>
         <meta property="og:title" content="Δίκτυα Υπολογιστών | Ορολογία">
-        <script src="https://grcodeclub.gr/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
         <script src="https://grcodeclub.gr/network/js/menu.js"></script>
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/header_and_footer.css">
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/main.css">
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/text.css">
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/layout.css">
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/card.css">
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/list.css">
-        <link rel="stylesheet" href="https://grcodeclub.gr/css/body.css">
-        <link rel='icon' type='image/png' href='https://grcodeclub.gr/file/logo/black_logo.png'>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
+        <style>
+           table, th, td {
+                border: 1px solid rgba(255, 255, 255, 0.176);
+                border-collapse: collapse;
+                text-align: center;
+                color: white;}
+        </style>
     </head>
 
     <body class="network">
@@ -21,24 +27,22 @@
             <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας-->
                     <div class="layout">
-                        <div><img src="https://grcodeclub.gr/file/logo_and_graphic/logo.png" class="logo"/></div>
-                        <div><h1 class="header_text"><a href="https://grcodeclub.gr/"><span class="header_text">GrCode Club</span></a></h1></div>
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
                     </div> 
-                </div> <!--Τέλος Επικεφαλίδας-->
-           
+                 </div> <!--Τέλος Επικεφαλίδας-->        
                 <div class="Menu"> <!--Αρχή Menu-->
                     <div id="sidebarMenu" style="  overflow: auto;">
                         <ul class="sidebarMenuInner"></ul>
                     </div>
                 </div><!--Τέλος Menu-->
-
             </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
 
             <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
                     <div class="layout">
-                        <div><img src="https://grcodeclub.gr/file/logo_and_graphic/logo.png" class="logo"/></div>
-                        <div><h1 class="header_text"><a href="https://grcodeclub.gr/"><span class="header_text">GrCode Club</span></a></h1></div>
+                        <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
+                        <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
                     </div> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
                 <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -54,88 +58,27 @@
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                        <h1 class="title">Ορολογία </h1>
-                        <div class="dropcard">
-                            <button class="showCardButton">➕ Δίκτυο (Network)</button>
-                            <div class="card-content">
-                               <p> Ένα δίκτυο αναφέρεται σε ένα σύνολο συνδεδεμένων συσκευών που μπορούν να επικοινωνούν μεταξύ τους.</p>
-                            </div></div>
-
-                            <div class="dropcard">
-                            <button class="showCardButton">➕ Κόμβος (Node)</button>
-                            <div class="card-content">
-                                <p>Ένας κόμβος αναφέρεται σε μια συσκευή ή ένα σημείο στο δίκτυο, όπως υπολογιστής ή router.</p>
-                            </div></div>
-
-                            <div class="dropcard">
-                                <button class="showCardButton">➕ Δρομολογητής (Router)</button>
-                                <div class="card-content">
-                                    <p>Ένα Router είναι μια συσκευή που συνδέει διάφορα δίκτυα μεταξύ τους και μπορεί να αποφασίζει τη διαδρομή που πρέπει να ακολουθήσουν τα IP πακέτα.</p>
-                                </div></div>
-
-                            <div class="dropcard">
-                                <button class="showCardButton">➕ Πρωτόκολλο (Protocol)</button>
-                                <div class="card-content">
-                                    <p>Ένα πρωτόκολλο αναφέρεται σε ένα σύνολο κανόνων και διαδικασιών που χρησιμοποιούνται για την επικοινωνία μεταξύ δικτύων και συσκευών.</p>
-                                </div></div>
-
-                                <div class="dropcard">
-                                    <button class="showCardButton">➕ Internet Protocol (IP)</button>
-                                    <div class="card-content">
-                                        <p>Το IP είναι ένα πρωτόκολλο διαδικτύου που χρησιμοποιείται για τη μεταφορά δεδομένων μεταξύ συσκευών σε ένα δίκτυο. Το IPv4 και το IPv6 είναι οι δύο κύριες εκδόσεις του πρωτοκόλλου IP.</p>
-                                    </div></div>   
-                                    
-                                <div class="dropcard">
-                                    <button class="showCardButton">➕ Media Access Control (MAC)</button>
-                                    <div class="card-content">
-                                        <p>Η διεύθυνση MAC αναφέρεται είναι ένα μοναδικό αναγνωριστικό που ανατίθεται σε κάθε δικτυακή κάρτα. Χρησιμοποιείται για την αναγνώριση μιας συσκευής σε ένα LAN.</p>
-                                    </div></div> 
-                                
-                                <div class="dropcard"> <button class="showCardButton">➕ Internet Service Provider (ISP)</button>
-                                    <div class="card-content">
-                                        <p>Ένας πάροχος υπηρεσιών Διαδικτύου είναι μια εταιρεία ή οργανισμός που παρέχει πρόσβαση στο Διαδίκτυο στους χρήστες του. Ο ISP παρέχει συνήθως σύνδεση στο Διαδίκτυο μέσω καλωδίου, DSL, οπτικών ινών ή ασύρματων τεχνολογιών.</p>
-                                    </div></div> 
-                                
-                                <div class="dropcard">
-                                    <button class="showCardButton">➕ Network Address Translation (NAT)</button>
-                                    <div class="card-content">
-                                        <p>Είναι η τεχνική που χρησιμοποιείται για να μετατρέψει μια διεύθυνση IP σε άλλη διεύθυνση IP κατά τη διέλευση από ένα δίκτυο σε ένα άλλο.</p>
-                                    </div></div> 
-                                    
-                                <div class="dropcard"><button class="showCardButton">➕ Access Point</button>
-                                    <div class="card-content">
-                                        <p>Συσκευή ή σημείο πρόσβασης ασύρματης σύνδεσης.</p>
-                                    </div></div> 
-
-                                 <div class="dropcard">
-                                    <button class="showCardButton">➕ Bandwidth</button>
-                                    <div class="card-content">
-                                        <p>Εύρος ζώνης συχνοτήτων. Επίσης χρησιμοποείται για να δείξει τo εύρος των δεδομένων που μπορούν να μεταδοθούν σε ένα τηλεπικοινωνιακό κανάλι.</p>
-                                    </div></div> 
-
-                                 <div class="dropcard"><button class="showCardButton">➕ Broadcast</button>
-                                    <div class="card-content">
-                                        <p>Εκπομπή προς όλους τους κόμβους του δικτύου, συνοδεύοντας την πληροφορία με την αντίστοιχη broadcast διεύθυνση, ώστε να αποσταλεί σε όλους τους κόμβους.</p>
-                                    </div></div> 
-
-                                 <div class="dropcard"><button class="showCardButton">➕ buffer</button>
-                                    <div class="card-content">
-                                        <p>Χώρος προσωρινής αποθήκευσης</p>
-                                    </div></div> 
-
-                                <div class="dropcard"><button class="showCardButton">➕ Προώθηση πακέτων (forwarding)</button>
-                                    <div class="card-content">
-                                        <p>Μετακίνηση  ενός πακέτου από την θύρα που εισέρχεται προς την κατάλληλη θύρα  του router.</p>
-                                    </div></div> 
-
-                                    <div class="dropcard"><button class="showCardButton">➕ Local Area Network (LAN)</button>
-                                        <div class="card-content">
-                                            <p>Ένα δίκτυο συσκευών  που καλύπτει μια μικρή γεωγραφική περιοχή, όπως τα γραφεία μιας εταιρείας ή τον χώρο ενός σχολείου ή μιας πανεπιστημιακής σχολής κ.</p>
-                                        </div></div> 
-
-                                
-                            <script src="https://grcodeclub.gr/js/dropdown-content.js"></script>
-                </div><!-- Τέλος Background Κειμένου-->
+                    <h1 class="title">Ορολογία                 
+                        <div  class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
+                    </h1><br>
+                    <table ID="table" class="style2">
+                        <tr><td>Όρος</td> <td>Ελλήνικα</td> <td style=" text-align: center;">Περιγραφή</td></tr>
+                        <tr><td>Network</td>  <td>Δίκτυο</td>  <td>Ένα δίκτυο αναφέρεται σε ένα σύνολο συνδεδεμένων συσκευών που μπορούν να επικοινωνούν μεταξύ τους.</td></tr>
+                        <tr><td>Node</td>  <td>Κόμβος</td>  <td>Ένας κόμβος αναφέρεται σε μια συσκευή ή ένα σημείο στο δίκτυο, όπως υπολογιστής ή router.</td></tr>
+                        <tr><td>Router</td>  <td>Δρομολογητής</td>  <td>Ένα Router είναι μια συσκευή που συνδέει διάφορα δίκτυα μεταξύ τους και μπορεί να αποφασίζει τη διαδρομή που πρέπει να ακολουθήσουν τα IP πακέτα.</td></tr>
+                        <tr><td>Protocol</td>  <td>Πρωτόκολλο</td>  <td>Ένα πρωτόκολλο αναφέρεται σε ένα σύνολο κανόνων και διαδικασιών που χρησιμοποιούνται για την επικοινωνία μεταξύ δικτύων και συσκευών.</td></tr>
+                        <tr><td>Internet Protocol (IP)</td>  <td></td>  <td>Το IP είναι ένα πρωτόκολλο διαδικτύου που χρησιμοποιείται για τη μεταφορά δεδομένων μεταξύ συσκευών σε ένα δίκτυο. Το IPv4 και το IPv6 είναι οι δύο κύριες εκδόσεις του πρωτοκόλλου IP.</td></tr>
+                        <tr><td>Media Access Control (MAC)</td>  <td></td>  <td>Η διεύθυνση MAC αναφέρεται είναι ένα μοναδικό αναγνωριστικό που ανατίθεται σε κάθε δικτυακή κάρτα. Χρησιμοποιείται για την αναγνώριση μιας συσκευής σε ένα LAN.</td></tr>
+                        <tr><td>Network Address Translation (NAT)</td>  <td></td>  <td>Είναι η τεχνική που χρησιμοποιείται για να μετατρέψει μια διεύθυνση IP σε άλλη διεύθυνση IP κατά τη διέλευση από ένα δίκτυο σε ένα άλλο.</td></tr>
+                        <tr><td>Access Point</td>  <td></td>  <td>Συσκευή ή σημείο πρόσβασης ασύρματης σύνδεσης.</td></tr>
+                        <tr><td>Bandwidth</td>  <td></td>  <td>Εύρος ζώνης συχνοτήτων. Επίσης χρησιμοποείται για να δείξει τo εύρος των δεδομένων που μπορούν να μεταδοθούν σε ένα τηλεπικοινωνιακό κανάλι.</td></tr>
+                        <tr><td>Broadcast</td>  <td></td>  <td>Εκπομπή προς όλους τους κόμβους του δικτύου, συνοδεύοντας την πληροφορία με την αντίστοιχη broadcast διεύθυνση, ώστε να αποσταλεί σε όλους τους κόμβους.</td></tr>
+                        <tr><td>Βuffer</td>  <td></td>  <td>Χώρος προσωρινής αποθήκευσης</td></tr>
+                        <tr><td>Forwarding</td>  <td>Προώθηση πακέτων</td>  <td>Μετακίνηση  ενός πακέτου από την θύρα που εισέρχεται προς την κατάλληλη θύρα  του router.</td></tr>
+                        <tr><td>Local Area Network (LAN)</td>  <td></td>  <td>Ένα δίκτυο συσκευών  που καλύπτει μια μικρή γεωγραφική περιοχή, όπως τα γραφεία μιας εταιρείας ή τον χώρο ενός σχολείου ή μιας πανεπιστημιακής σχολής κλπ</td></tr>
+                    </table>
+                    <script src="https://grcodeclub.gr/javascript/search/search_table_row_cells_0.js"></script>
+                    </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
         </div> <!--Τέλος container-->
@@ -143,7 +86,7 @@
         <!-- Footer -->
         <footer>
             <table class="add_footer"></table>
-            <script src="https://grcodeclub.gr/js/footer.js"></script>       
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
         </footer>
     </body>
 </html>
