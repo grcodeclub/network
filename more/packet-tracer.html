@@ -1,1 +1,103 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.gr/file/background/network.png"/>
+        <meta property="og:title" content="Δίκτυα Υπολογιστών | Packet Tracer">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.gr/network/js/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
 
+    <body class="network">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu">
+                    <ul class="sidebarMenuInner"></ul>
+                </div>
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                    <h1 class="title">Packet Tracer</h1>
+
+                    <h3 class="highlight_black">Διαθέσιμες προτροπές (prompts)</h3>
+                    <p>[Prompt] User exec mode</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell"> </code></pre></div>
+                    <p>[Prompt] Privileged exec mode</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell"> </code></pre></div>
+                    <p>[Prompt] Global configuration mode</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router(config)#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell"> </code></pre></div>
+                    <p>[Prompt] interface configuration mode</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router(config-if)#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell"> </code></pre></div>
+                    <h3 class="highlight_black">Χρήσιμες εντολές</h3>
+                    <p>Αναίρεση εντολής / ρύθμισης</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">no [ρύθμιση/εντολή]</code></pre></div>
+                    <p>Εμφάνιση του τρέχοντος configuration</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">show running-config</code></pre></div>
+                    <p>Εμφάνιση του αποθηκευμένου configuration (NVRAM)</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">show startup-config</code></pre></div>
+                    <p>Εμφάνιση του πίνακα δρομολόγησης</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">show ip route</code></pre></div>
+                    <p>Έλεγχος της κατάστασης των διεπαφών</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">show ip interface brief</code></pre></div>
+                    <p>Λεπτομερής εμφάνιση των ρυθμίσεων του i/f</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">show interfaces [ονομα i/f]</code></pre></div>
+                    <p>Λεπτομερής εμφάνιση των ρυθμίσεων όλων των i/f</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">show interfaces</code></pre></div>
+                    <p>Εισαγωγή σε global configuration mode</p>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">configure terminal </code></pre></div>
+
+                    <h3 class="highlight_black">Ακολουθία εντολών αλλαγής ονόματος δρομολογητή</h3>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">enable</code></pre></div>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">configure terminal </code></pre></div>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router(config)#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">hostname [ΟΝΟΜΑ]</code></pre></div>
+                    <div class="terminal"><pre class="command-line" data-prompt="Router(config)#" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `"><code class="language-powershell">end</code></pre></div>
+
+                    </div><!-- Τέλος Background Κειμένου-->
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+        </footer>
+    </body>
+</html>
