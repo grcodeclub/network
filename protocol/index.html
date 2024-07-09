@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <meta property="og:image" content="https://grcodeclub.gr/file/background/network.png"/>
@@ -5,100 +6,35 @@
         <script src="https://grcodeclub.gr/js/jquery.js"></script>
         <script src="https://grcodeclub.gr/network/js/menu.js"></script>
         <script src="https://grcodeclub.github.io/javascript/add-elements/head.js"></script>
+    
+        <style>
+
+   
+            .pagination {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .pagination button {
+                margin: 0 5px;
+                padding: 5px 10px;
+            }
+        </style>
     </head>
 
      <body class="network">
         <div class="container">
-            
            <div id="add_headder_and_menu"></div><script src="https://grcodeclub.gr/javascript/add-elements/headder_and_menu.js"></script>
-
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">Πρωτόκολλα</h1>
-                    <p>
-                        Τα πρωτοκόλλα είναι ένα σύνολο από κανόνες που καθορίζουν τον τρόπο θα μπορούν να επικοινωνούν και να ανταλλάζουν πληροφορίες δυο συσκευές μεταξύ τους. Ορισμένα τα οποία ορίζει ένα πρωτόκολλο είναι το είδος της πληροφορίας, την μορφή και την σειρά των μνημάτων που θα ανταλλάξουν οι δυο συσκευές. </p>
-                <div  class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
-                <br>
-                <table ID="table" class="style2">
-                    <tr>
-                        <td>Πρωτόκολλο</td>
-                        <td>Περιγραφή</td>
-                    </tr>
-                    <tr class="style2">
-                        <td><a href="./ip" class="link_open">IP</a></td>    <td>Internet Protocol <br> Χρησιμοποιείται για τη μεταφορά πακέτων στο Internet</td>
-                    </tr>
-                 
-                    <tr class="style2">
-                        <td><a href="./icmp" class="link_open">ICMP</a></td>    <td>Internet Control Message Protocol <br> Χρησιμοποιείται για τη μεταφορά μηνυμάτων ελέγχου και σφαλμάτων στο Internet</td>
-                    </tr>
-                    <tr class="style2">
-                        <td><a href="./arp" class="link_open">ARP</a></td>    <td>Address Resolution Protocol <br> Χρησιμοποιείται για τη εντοπισμό μιας διεύθυνσης MAC με βάση την διεύθυνση IP</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>RARP</td>    <td>Reverse Address Resolution Protocol <br> Χρησιμοποιείται για την αντίστροφη μετατροπή μιας διεύθυνσης MAC σε αντίστοιχη διεύθυνση IP</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>IPX</td>     <td>Internetwork Packet Exchange <br> Χρησιμοποιείται στα Δίκτυα Novell για τη μεταφορά πακέτων</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>IGMP</td>    <td>Internet Group Management Protocol <br> Χρησιμοποιείται για τη διαχείριση group σε πρωτόκολλα multicast</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>TCP</td>    <td>Transmission Control Protocol <br> Χρησιμοποιείται για την αξιόπιστη παράδοση πακέτων δεδομένων μεταξύ εφαρμογών</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>UDP</td>    <td>User Datagram Protocol <br> Χρησιμοποιείται  παράδοση πακέτων δεδομένων μεταξύ εφαρμογών, όταν μας νοιάζει η ταχύτητα παράδοσης αλλά δεν είναι αξιόπιστο. </td>
-                    </tr>
-                    <tr class="style2">
-                        <td>ICMPv6</td>    <td>Internet Control Message Protocol version 6 <br> Η έκδοση του πρωτοκόλλου ICMP που χρησιμοποιείται στο IPv6</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>BGP</td>    <td>Border Gateway Protocol <br> Ένα πρωτόκολλο δρομολόγησης που χρησιμοποιείται για την ανταλλαγή των path μεταξύ διαφορετικών αυτόνομων συστημάτων (AS)</td>
-                    </tr>
-                    <tr class="style2">
-                        <td><a href="./ftp" class="link_open">FTP</a></td>    <td>File Transfer Protocol <br> Χρησιμοποιείται για τη μεταφορά αρχείων μεταξύ Server και Client στο Internet</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>SFTP</td>    <td>SSH File Transfer Protocol<br>Είναι ένα ασφαλές πρωτόκολλο μεταφοράς αρχείων που χρησιμοποιείται για την ασφαλή μεταφορά αρχείων μέσω δικτύου.</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>HTTP</td>    <td>Hypertext Transfer Protocol <br> Χρησιμοποιείται για τη μεταφορά website και data μεταξύ Server και Client</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>HTTPS</td>    <td>Hypertext Transfer Protocol Secure <br>Μια ασφαλής έκδοση του HTTP που χρησιμοποιεί κρυπτογράφηση.</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>SMTP</td>    <td>Simple Mail Transfer Protocol <br> Χρησιμοποιείται για την αποστολή και παράδοση μηνυμάτων στο ηλεκτρονικό ταχυδρομείο.</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>DHCP</td>    <td>Dynamic Host Configuration Protocol <br> Χρησιμοποιείται για την αυτόματη ανάθεση διευθύνσεων IP σε συσκευές σε ένα δίκτυο</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>SNMP</td>    <td>Simple Network Management Protocol <br> Χρησιμοποιείται για την διαχείριση και παρακολούθηση δικτύων, συσκευών και υπηρεσιών</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>POP3</td>    <td>Post Office Protocol, version 3<br> Χρησιμοποιείται για τη λήψη ηλεκτρονικών μηνυμάτων από έναν Server.</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>IMAP</td>    <td>Internet Message Access Protocol <br>Ένα άλλο πρωτόκολλο για τη λήψη ηλεκτρονικών μηνυμάτων, με περισσότερες λειτουργίες από το POP3.</td>
-                    </tr>
-                    <tr class="style2">
-                        <td>DNS</td>    <td>Χρησιμοποιείται για τη μετάφραση των ονομάτων τομέων (domain names) σε διευθύνσεις IP.</td>
-                    </tr>
-                    <tr class="style2"><td>DNSSEC</td>   <td>DNS Security Extensions</td></tr>
-                    <tr class="style2"><td>RTP</td>      <td>Real-time Transport Protocol <br> Χρησιμοποιείται για τη μετάδοση ήχου και βίντεο σε πραγματικό χρόνο.</td></tr>
-                    <tr class="style2"><td>NTP</td>      <td>Network Time Protocol <br> Χρησιμοποιείται για το συγχρονισμό του χρόνου σε δίκτυα.</td></tr>
-                    <tr class="style2"><td>IPSec</td>    <td>Internet Protocol Security</td></tr>
-                    <tr class="style2"><td>VoIP</td>     <td>Voice over Internet Protocol</td></tr>
-                    <tr class="style2"><td>RIP</td>      <td>Routing Information Protocol <br> Πρωτόκολλο δρομολόγησης που χρησιμοποιείται για την ανταλλαγή πληροφοριών δρομολόγησης μεταξύ router</td></tr>
-                    <tr class="style2"><td>OSPF</td>     <td>Open Shortest Path First <br>Πρωτόκολλο δρομολόγησης που χρησιμοποιείται για τον υπολογισμό της βέλτιστης διαδρομής σε μεγάλα δίκτυα</td></tr>
-                    <tr class="style2"><td>IPSec</td>    <td>Internet Protocol Security <br> Χρησιμοποιείται για την ασφαλή μετάδοση πακέτων δεδομένων μέσω του Internet</td></tr>
-                    <tr class="style2"><td>VLAN </td>    <td>Virtual Local Area Network</td></tr>
-                    <tr class="style2"><td>PPP</td>      <td>Point-to-Point Protocol <br> Χρησιμοποιείται για τη σύνδεση δικτύων μέσω γραμμής τηλεφώνου ή άλλου μέσου επικοινωνίας</td></tr>
-                    <tr class="style2"><td>MPLS</td>     <td>Multiprotocol Label Switching <br>Πρωτόκολλο δρομολόγησης που χρησιμοποιείται για τη δημιουργία VPN</td></tr>
-                    <tr class="style2"><td>VRRP</td>     <td>Virtual Router Redundancy Protocol</td></tr>
-                </table>
-                          <script src="https://grcodeclub.gr/javascript/search/search_table_row_cells_0.js"></script>
+                    <p>Τα πρωτοκόλλα είναι ένα σύνολο από κανόνες που καθορίζουν τον τρόπο θα μπορούν να επικοινωνούν και να ανταλλάζουν πληροφορίες δυο συσκευές μεταξύ τους. Ορισμένα τα οποία ορίζει ένα πρωτόκολλο είναι το είδος της πληροφορίας, την μορφή και την σειρά των μνημάτων που θα ανταλλάξουν οι δυο συσκευές. </p>
+                    <div  class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
+                    <br><br>
+                    <table id="dataTable" class="style2"><thead><tr><th>Πρωτόκολλο</th><th>Περιγραφή</th></tr></thead><tbody></tbody></table>
+                    <div class="pagination" id="pagination"></div>
+                    <script src="https://grcodeclub.gr/javascript/tables/pages.js"></script>       
+                    <script src="https://grcodeclub.gr/javascript/search/search_table_row_cells_0.js"></script>
                 </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
@@ -109,5 +45,46 @@
             <table class="add_footer"></table>
             <script src="https://grcodeclub.gr/js/footer.js"></script>       
         </footer>
+
+
+       <script>
+        const data = [
+    {cell0: '<a href=".">IP</a>', cell1: 'Internet Protocol Χρησιμοποιείται για τη μεταφορά πακέτων στο Internet'},
+    {cell0: 'ICMP', cell1: 'Internet Control Message Protocol Χρησιμοποιείται για τη μεταφορά μηνυμάτων ελέγχου και σφαλμάτων στο Internet'},
+    {cell0: 'ARP', cell1: 'Address Resolution Protocol Χρησιμοποιείται για τη εντοπισμό μιας διεύθυνσης MAC με βάση την διεύθυνση IP'},
+    {cell0: 'RARP', cell1: 'Reverse Address Resolution Protocol Χρησιμοποιείται για την αντίστροφη μετατροπή μιας διεύθυνσης MAC σε αντίστοιχη διεύθυνση IP'},
+    {cell0: 'IPX', cell1: 'Internetwork Packet Exchange Χρησιμοποιείται στα Δίκτυα Novell για τη μεταφορά πακέτων'},
+    {cell0: 'IGMP', cell1: 'Internet Group Management Protocol Χρησιμοποιείται για τη διαχείριση group σε πρωτόκολλα multicast'},
+    {cell0: 'TCP', cell1: 'Transmission Control Protocol Χρησιμοποιείται για την αξιόπιστη παράδοση πακέτων δεδομένων μεταξύ εφαρμογών'},
+    {cell0: 'UDP', cell1: 'User Datagram Protocol Χρησιμοποιείται  παράδοση πακέτων δεδομένων μεταξύ εφαρμογών, όταν μας νοιάζει η ταχύτητα παράδοσης αλλά δεν είναι αξιόπιστο.'},
+    {cell0: 'ICMPv6', cell1: 'Internet Control Message Protocol version 6 Η έκδοση του πρωτοκόλλου ICMP που χρησιμοποιείται στο IPv6'},
+    {cell0: 'BGP', cell1: 'Border Gateway Protocol Ένα πρωτόκολλο δρομολόγησης που χρησιμοποιείται για την ανταλλαγή των path μεταξύ διαφορετικών αυτόνομων συστημάτων (AS)'},
+    {cell0: 'FTP', cell1: 'File Transfer Protocol Χρησιμοποιείται για τη μεταφορά αρχείων μεταξύ Server και Client στο Internet'},
+    {cell0: 'SFTP', cell1: 'SSH File Transfer Protocol Είναι ένα ασφαλές πρωτόκολλο μεταφοράς αρχείων που χρησιμοποιείται για την ασφαλή μεταφορά αρχείων μέσω δικτύου.'},
+    {cell0: 'HTTP', cell1: 'Hypertext Transfer Protocol Χρησιμοποιείται για τη μεταφορά website και data μεταξύ Server και Client'},
+    {cell0: 'HTTPS', cell1: 'Hypertext Transfer Protocol Secure Μια ασφαλής έκδοση του HTTP που χρησιμοποιεί κρυπτογράφηση.'},
+    {cell0: 'SMTP', cell1: 'Simple Mail Transfer Protocol Χρησιμοποιείται για την αποστολή και παράδοση μηνυμάτων στο ηλεκτρονικό ταχυδρομείο.'},
+    {cell0: 'SNMP', cell1: 'Simple Network Management Protocol Χρησιμοποιείται για την διαχείριση και παρακολούθηση δικτύων, συσκευών και υπηρεσιών'},
+    {cell0: 'POP3', cell1: 'Post Office Protocol, version 3 Χρησιμοποιείται για τη λήψη ηλεκτρονικών μηνυμάτων από έναν Server.'},
+    {cell0: 'IMAP', cell1: 'Internet Message Access Protocol Ένα άλλο πρωτόκολλο για τη λήψη ηλεκτρονικών μηνυμάτων, με περισσότερες λειτουργίες από το POP3.'},
+    {cell0: 'DNS', cell1: 'Χρησιμοποιείται για τη μετάφραση των ονομάτων τομέων (domain names) σε διευθύνσεις IP.'},
+    {cell0: 'DNSSEC', cell1: 'DNS Security Extensions'},
+    {cell0: 'RTP', cell1: 'Real-time Transport Protocol Χρησιμοποιείται για τη μετάδοση ήχου και βίντεο σε πραγματικό χρόνο.'},
+    {cell0: 'NTP', cell1: 'Network Time Protocol Χρησιμοποιείται για το συγχρονισμό του χρόνου σε δίκτυα.'},
+    {cell0: 'IPSec', cell1: 'Internet Protocol Security'},
+    {cell0: 'VoIP', cell1: 'Voice over Internet Protocol'},
+    {cell0: 'RIP', cell1: 'Routing Information Protocol Πρωτόκολλο δρομολόγησης που χρησιμοποιείται για την ανταλλαγή πληροφοριών δρομολόγησης μεταξύ router'},
+    {cell0: 'OSPF', cell1: 'Open Shortest Path First Πρωτόκολλο δρομολόγησης που χρησιμοποιείται για τον υπολογισμό της βέλτιστης διαδρομής σε μεγάλα δίκτυα'},
+    {cell0: 'IPSec', cell1: 'Internet Protocol Security Χρησιμοποιείται για την ασφαλή μετάδοση πακέτων δεδομένων μέσω του Internet'},
+    {cell0: 'VLAN', cell1: 'Virtual Local Area Network'},
+    {cell0: 'SNMP', cell1: 'Simple Network Management Protocol Χρησιμοποιείται για την διαχείριση και παρακολούθηση δικτύων, συσκευών και υπηρεσιών'},
+    {cell0: 'POP3', cell1: 'Post Office Protocol, version 3 Χρησιμοποιείται για τη λήψη ηλεκτρονικών μηνυμάτων από έναν Server.'},
+    {cell0: 'IMAP', cell1: 'Internet Message Access Protocol Ένα άλλο πρωτόκολλο για τη λήψη ηλεκτρονικών μηνυμάτων, με περισσότερες λειτουργίες από το POP3.'},
+    {cell0: 'DNS', cell1: 'Χρησιμοποιείται για τη μετάφραση των ονομάτων τομέων (domain names) σε διευθύνσεις IP.'},
+    {cell0: 'DNSSEC', cell1: 'DNS Security Extensions'},
+    {cell0: 'RTP', cell1: 'Real-time Transport Protocol Χρησιμοποιείται για τη μετάδοση ήχου και βίντεο σε πραγματικό χρόνο.'},
+    {cell0: 'NTP', cell1: 'Network Time Protocol Χρησιμοποιείται για το συγχρονισμό του χρόνου σε δίκτυα.'},
+   ];
+       </script>
     </body>
 </html>
