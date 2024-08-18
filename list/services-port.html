@@ -1,90 +1,58 @@
 <html>
     <head>
-        <meta property="og:image" content="https://grcodeclub.github.io/file/background/network.png"/>
-        <meta property="og:title" content="Κατάλογος θυρών TCP & UDP">
-        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
-        <script src="https://grcodeclub.github.io/network/js/menu.js"></script>
+        <meta property="og:image" content="https://grcodeclub.gr/file/background/network.png"/>
+        <meta property="og:title" content="Δίκτυα Υπολογιστών | Πρωτόκολλα">
+        <script src="https://grcodeclub.gr/js/jquery.js"></script>
+        <script src="https://grcodeclub.gr/network/js/menu.js"></script>
         <script src="https://grcodeclub.github.io/javascript/add-elements/head.js"></script>
     </head>
 
-    <body class=network>
+     <body class="network">
         <div class="container">
-            <div id="add_headder_and_menu"></div><script src="https://grcodeclub.gr/javascript/add-elements/headder_and_menu.js"></script>
+            
+           <div id="add_headder_and_menu"></div><script src="https://grcodeclub.gr/javascript/add-elements/headder_and_menu.js"></script>
 
             <div class="Text"> <!--Αρχή Κειμένου-->
-               <a href="https://grcodeclub.gr/network/list"><img class="logo_back"></a> <script src="https://grcodeclub.github.io/javascript/add-elements/logo-back.js"></script>
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
-                    <h1 class="title">Κατάλογος θυρών TCP & UDP</h1>
-                    <p>
-                        Το TCP και UDP είναι τα 2 πρωτόκολλα που χρησιμοποιούνται για την ανταλλαγή πληροφοριών αναμεσά σε δύο host. Μια πληροφορία που παρέχει το κάθε πακέτο TCP και UDP 
-                        είναι η port του αποστολέα και του παραλήπτη. Η κάθε port ορίζεται με έναν αριθμό. Όταν το πακέτο φτάσει στον παραλήπτη, ο αριθμός της θύρας  τον βοήθα να προωθήσει το πακέτο στην κατάλληλη εφαρμογή. 
-                        <br><br>
-                        Ο οργανισμός IANA έχει καθορίσει την χρήση της θύρα,δηλαδή από ποιο πρωτόκολλο θα χρησιμοποιείται. Η συγκεκριμένη δέσμευση δεν είναι υποχρεωτικοί και επόμενος μια θύρα μπορεί να χρησιμοποιείται για
-                        διαφορετικό πρωτόκολλο από αυτό που έχει ορίσει η IAN.  
-                    </p>
-                    <div class="search"><input type="input" class="form__field" placeholder="Αναζήτηση Port" id='searchInput'/></div>
-                    <table id="table" style="margin-top: 13px; color: white;">
-                    <tr class="style2">     <th>Port</th>   <th></th>           <th>Υπηρεσία</th>       <th>Περιγραφή</th></tr>
-                    
-                    <tr class="style2">     <td>7</td>      <td>TCP/UDP</td>    <td>ECHO</td>           <td></td></tr>
-                    <tr class="style2">     <td>43</td>     <td>TCP</td>        <td>WHOIS</td>          <td></td></tr>
-                    <tr class="style2">     <td>1194</td>   <td>UDP</td>        <td>OpenVPN	</td>       <td></td></tr>          
-                    <tr class="style2">     <td>22</td>     <td>TCP/UDP</td>    <td>SSH</td>            <td>Το Secure Shell χρησιμοποιείται για ασφαλείς συνδέσεις σε υπολογιστές UNIX, για μεταφορά αρχείων και για port forwarding.</td></tr>
-                    <tr class="style2">     <td>23</td>     <td>TCP/UDP</td>    <td>Telnet</td>         <td>Μη κρυπτογραφημένη επικοινωνία</td>   </tr>
-                    
-                    <tr><td colspan="4" ><h1 style="text-align: center; background-color: black; color: white"">Microsoft</h1></td></tr>
-                    <tr class="style2">      <td>1270</td>     <td>TCP/UDP</td>     <td></td>       <td>Microsoft Operations Manager 2005 agent	</td></tr>
-                    <tr class="style2">      <td>1723</td>     <td>TCP/UDP</td>     <td></td>       <td>Microsoft PPTP VPN</td></tr>  
-                    <tr class="style2">      <td>1755</td>     <td>TCP/UDP</td>     <td></td>       <td>Microsoft Media Services (MMS, ms-streaming)</td></tr>  
-                    <tr class="style2">      <td>1863</td>     <td>TCP</td>         <td></td>       <td>Windows Live Messenger</td></tr>  
-                    <tr class="style2">      <td>1900</td>     <td>UDP</td>         <td></td>       <td>Microsoft SSDP Enables discovery of UPnP devices</td></tr>  
-                    <tr class="style2">      <td>3389</td>     <td>TCP</td>         <td></td>       <td>Microsoft Terminal Server (RDP) officially registered as Windows Based Terminal (WBT)</td></tr>
-                    <tr class="style2">      <td>6891</td>     <td  rowspan="10">TCP/UDP</td>     <td  rowspan="10" colspan="2">Windows Live Messenger (File transfer)</td></tr>  
-                    <tr class="style2">      <td>6892</td>     </tr>  
-                    <tr class="style2">      <td>6893</td>     </tr>  
-                    <tr class="style2">      <td>6894</td>     </tr>  
-                    <tr class="style2">      <td>6895</td>     </tr>  
-                    <tr class="style2">      <td>6896</td>     </tr>  
-                    <tr class="style2">      <td>6897</td>     </tr>  
-                    <tr class="style2">      <td>6898</td>     </tr>  
-                    <tr class="style2">      <td>6899</td>     </tr>  
-                    <tr class="style2">      <td>6900</td>     </tr>  
-                    
-                    <tr><td colspan="4" ><h1 style="text-align: center; background-color: black; color: white">HTTP</h1></td></tr>
-                    <tr class="style2">      <td>80</td>        <td>TCP</td>        <td>HTTP</td>       <td>HTTP (HyperText Transfer Protocol) - used for transferring web pages</td></tr>
-                    <tr class="style2">      <td>81</td>        <td>TCP</td>        <td>HTTP</td>       <td>HTTP Alternate (HyperText Transfer Protocol)</td></tr>
-                    <tr class="style2">      <td>593</td>       <td>TCP/UDP</td>    <td>HTTP</td>       <td>HTTP RPC Ep Map</td></tr>
-                    <tr class="style2">      <td>3128</td>      <td>TCP</td>        <td>HTTP</td>       <td>HTTP used by web caches and the default port for the Squid cache</td></tr>
-
-
-                    <tr><td colspan="4" ><h1 style="text-align: center; background-color: black; color: white">File Transfer Protocol</h1></td></tr>
-                    <tr class="style2">      <td>20 </td>       <td>TCP </td>       <td>FTP</td>       <td>Data port</td></tr>  
-                    <tr class="style2">      <td>21 </td>       <td>TCP </td>       <td>FTP</td>       <td>Control (command) port</td></tr>
-                    <tr class="style2">      <td>989 </td>      <td>TCP/UDP</td>    <td>FTP</td>       <td>FTP Protocol (data) over TLS/SSL	</td></tr>
-                    <tr class="style2">      <td>990</td>       <td>TCP/UDP</td>    <td>FTP</td>       <td>FTP Protocol (control) over TLS/SSL</td></tr>
-                    <tr class="style2">      <td>69</td>        <td>UDP</td>        <td>TFTP</td>       <td>Trivial File Transfer Protocol</td></tr>
-                    <tr class="style2">      <td>115</td>       <td>TCP</td>        <td>SFTP</td>       <td>Simple File Transfer Protocol</td></tr>
-                
-                    <tr><td colspan="4" ><h1 style="text-align: center; background-color: black; color: white">Email</h1></td></tr>
-                    <tr class="style2">      <td>220</td>       <td>TCP/UDP</td>     <td>IMAP</td>      <td>Interactive Mail Access Protocol, version 3 </td></tr>
-                    <tr class="style2">      <td>218</td>       <td>TCP/UDP</td>     <td>MPP</td>       <td>Message Posting Protocol</td></tr>
-                    <tr class="style2">      <td>143</td>       <td>TCP/UDP</td>     <td>IMAP</td>      <td>Internet Message Access Protocol 4 - χρησιμοποιείται για την παραλαβή ηλεκτρονικού ταχυδρομείου από τους χρήστες.</td></tr>
-                    <tr class="style2">      <td>109</td>       <td>TCP</td>         <td>POP</td>       <td>Post Office Protocol, version 2</td></tr>
-                    <tr class="style2">      <td>110</td>       <td>TCP</td>         <td>POP3</td>      <td>Post Office Protocol version 3) - χρησιμοποιείται για την παραλαβή ηλεκτρονικού ταχυδρομείου από τους χρήστες.</td></tr>
-                    <tr class="style2">      <td>25</td>        <td>TCP/UDP</td>     <td>SMTP</td>      <td>Χρησιμοποιείται για την διακίνηση των μηνυμάτων email μεταξύ των servers.</td></tr>
-                
-                    <tr><td colspan="4" ><h1 style="text-align: center; background-color: black; color: white">SQL</h1></td></tr>
-                    <tr class="style2">      <td>156</td>       <td>TCP/UDP</td>     <td>SQL</td>             <td>SQL Service</td></tr>
-                    <tr class="style2">      <td>118</td>       <td>TCP</td>         <td>SQL</td>             <td>SQL Services</td></tr>
-                    <tr class="style2">      <td>1433</td>      <td>TCP/UDP</td>     <td>Microsoft SQL</td>   <td>Microsoft SQL database system	</td></tr>
-                    <tr class="style2">      <td>1434</td>      <td>TCP/UDP</td>     <td>Microsoft SQL</td>   <td>Microsoft SQL Monitor	</td></tr>
-                    <tr class="style2">      <td>3306</td>      <td>TCP/UDP</td>     <td>MySQL Database system</td>      <td></td>   </tr>
-                    
-                    <tr><td colspan="4" ><h1 style="text-align: center; background-color: black; color: white"</h1></td></tr>
-                    <tr class="style2">      <td>513</td>     <td>UDP</td>     <td>Routing - RIP</td>   </tr>
-                    <tr class="style2">      <td>53</td>     <td>TCP/UDP</td>     <td>DNS</td>   </tr>
-                    </table>
-                    <script src="https://grcodeclub.github.io/javascript/search/search_table_row_cells_0.js"></script>
+                    <h1 class="title">Πρωτόκολλα<br><div class="search" id="search"><input style="width: 100%;" type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div></h1>
+                     <table id="table" class="style2">
+                        <tr id="title-table"><td>Port</td> <td>Υπηρεσία</td> <td>Λεπτομέρειες</td></tr>
+                        <t><td>7</td><td>echo</td> <td>ECHO</td></tr>
+                        <tr><td>20</td><td>ftp-data</td> <td>File Transfer [Data]</td></tr>
+                        <tr><td>21</td><td>ftp</td> <td>File Transfer [Control]</td></tr>
+                        <tr><td>22</td><td>ssh</td> <td>Το Secure Shell χρησιμοποιείται για ασφαλείς συνδέσεις σε υπολογιστές UNIX, για μεταφορά αρχείων και για port forwarding.</td></tr>
+                        <tr><td>23</td><td>telnet</td> <td>Telnet - Μη κρυπτογραφημένη επικοινωνία</td></tr>
+                        <tr><td>25</td><td>smtp</td> <td>Email<br>Χρησιμοποιείται για την διακίνηση των μηνυμάτων email μεταξύ των servers.</td></tr>
+                        <tr><td>43</td><td>nicname</td> <td>WHOIS</td></tr>
+                        <tr><td>53</td><td>echo</td> <td>DNS</td></tr>
+                        <tr><td>66</td><td>sql-net</td> <td>Oracle SQL*NET</td></tr>
+                        <tr><td>69</td><td>tftp</td> <td>Trivial File Transfer</td></tr>
+                        <tr><td>80</td><td>http</td> <td>HTTP (HyperText Transfer Protocol) - used for transferring web pages</td></tr>
+                        <tr><td>88</td><td>Kerberos</td> <td>Authentication System</td></tr>
+                        <tr><td>92</td><td>npp</td> <td>Network Printing Protocol</td></tr>
+                        <tr><td>109</td><td>pop2</td> <td>Post Office Protocol, version 2</td></tr>
+                        <tr><td>110</td><td>pop3</td> <td>Post Office Protocol, version 3 - Χρησιμοποιείται για την παραλαβή ηλεκτρονικού ταχυδρομείου από τους χρήστες.</td></tr>
+                        <tr><td>115</td><td>SFTP</td> <td></td></tr>
+                        <tr><td>117</td><td>uucp-path</td> <td>UUCP Mapping Project (Path Service)</td></tr>
+                        <tr><td>118</td><td>sqlserv</td> <td>SQL Services</td></tr>
+                        <tr><td>119</td><td>nntp</td> <td>Network News Transfer Protocol</td></tr>
+                        <tr><td>143</td><td>imap</td> <td>Email<br>Internet Message Access Protocol- Χρησιμοποιείται για την παραλαβή ηλεκτρονικού ταχυδρομείου από τους χρήστες.</td></tr>
+                        <tr><td>156</td><td>sqlsrv</td> <td>SQL Services</td></tr>
+                        <tr><td>218</td><td>mpp</td> <td>Email<br>Message Posting Protocol</td></tr>
+                        <tr><td>220</td><td>imap3</td> <td>Email<br>Interactive Mail Access Protocol, version 3</td></tr>
+                        <tr><td>1194</td><td>openvpn</td> <td>OpenVPN</td></tr>
+                        <tr><td>1270</td><td>opsmgr</td> <td>Microsoft System Center Operations Manager (SCOM) (formerly Microsoft Operations Manager (MOM)) agent</td></tr>
+                        <tr><td>1433</td><td>ms-sql-s</td> <td>Microsoft SQL Database System</td></tr>
+                        <tr><td>1434</td><td>ms-sql-m</td> <td>Microsoft SQL Monitor</td></tr>
+                        <tr><td>1723</td><td>pptp</td> <td>Microsoft PPTP VPN</td></tr>
+                        <tr><td>1755</td><td>ms-streaming</td> <td>Microsoft Media Services (MMS, ms-streaming)</td></tr>
+                        <tr><td>1863</td><td>msnp</td> <td>Microsoft Notification Protocol (MSNP), used by the Microsoft Messenger service and a number of instant messaging Messenger clients</td></tr>
+                        <tr><td>1900</td><td>ssdp</td> <td>Microsoft SSDP Enables discovery of UPnP devices</td></tr>
+                        <tr><td>3306</td><td>mysql</td> <td>MySQL Database system</td></tr>
+                        <tr><td>3389</td><td>ms-wbt-server</td> <td>Microsoft Terminal Server (RDP) officially registered as Windows Based Terminal (WBT)</td></tr>
+                    </table>    
+                     <div class="pagination" id="pagination"></div>
+                     <script src="https://grcodeclub.gr/javascript/search/search-tables-pages.js"></script>
                 </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
@@ -93,7 +61,7 @@
         <!-- Footer -->
         <footer>
             <table class="add_footer"></table>
-            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+            <script src="https://grcodeclub.gr/js/footer.js"></script>       
         </footer>
     </body>
 </html>
