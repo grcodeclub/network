@@ -5,9 +5,6 @@ $(document).ready(function() {
     
     menuLink = ' <li><a href="https://grcodeclub.gr/network/">Δίκτυα Υπολογιστών</a></li>';
     $('.sidebarMenuInner').append(menuLink);
-
-    menuLink = '<li><a href="https://grcodeclub.gr/network/list">Κατάλογοι</a></li>';
-     $('.sidebarMenuInner').append(menuLink);
     
     menuLink = '<li><a href="https://grcodeclub.gr/network/protocol">Πρωτόκολλα</a></li>';
     $('.sidebarMenuInner').append(menuLink);
