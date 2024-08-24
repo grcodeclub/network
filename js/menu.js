@@ -11,10 +11,10 @@ window.onload = function() {
         '<li style="height: 200px;"></li>'
     ];
     
-    var $sidebarMenuInner = document.querySelector('.sidebarMenuInner');
-    if ($sidebarMenuInner) {
-        menuLinks.forEach(function(link) {
-            $sidebarMenuInner.insertAdjacentHTML('beforeend', link);
-        });
-    }
+    var $sidebarMenuInners = document.querySelectorAll('.sidebarMenuInner');
+$sidebarMenuInners.forEach(function($sidebarMenuInner) {
+    menuLinks.forEach(function(link) {
+        $sidebarMenuInner.insertAdjacentHTML('beforeend', link);
+    });
+});
 };
