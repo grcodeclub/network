@@ -2,24 +2,18 @@
     <head>
         <meta property="og:image" content="https://grcodeclub.gr/file/background/network.png"/>
         <meta property="og:title" content="Δίκτυα Υπολογιστών | Πρωτόκολλα">
-        <script src="https://grcodeclub.gr/js/jquery.js"></script>
-        <script src="https://grcodeclub.gr/network/js/menu.js"></script>
         <script src="https://grcodeclub.github.io/js/add/head.js"></script>
     </head>
 
-    <body class="network">
+    <body id="network">
         <div class="container">
-        <div id="add_headder_and_menu"></div><script src="https://grcodeclub.gr/js/add/headder_and_menu.js"></script>
-
+        <div id="add_headder_and_menu"></div>
             <div class="Text"> <!--Αρχή Κειμένου-->
               <a href="https://grcodeclub.gr/network/protocol"><h1 id="back_page"></h1></a> <script src="https://grcodeclub.github.io/js/add/back_page.js"></script>
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">ARP</h1> 
-                    <p>
-                        Δυναμικός μηχανισμός εντοπισμού της MAC Διεύθυνσης μιας συσκευής στο δίκτυο, χρησιμοποιούντα την αντίστοιχη IP address της συσκευής.
-                    </p>
-                    <p>
-                        Για να εντοπιστεί η MAC μιας συσκευής χρησιμοποιεί
+                    <p>Δυναμικός μηχανισμός εντοπισμού της MAC Διεύθυνσης μιας συσκευής στο δίκτυο, χρησιμοποιούντα την αντίστοιχη IP address της συσκευής.</p>
+                    <p>Για να εντοπιστεί η MAC μιας συσκευής χρησιμοποιεί
                         <ol>
                             <li>ARP Reuest που είναι Broadcast και κάνουμε ερώτηση προς το δίκτυο </li>
                             <li>ARP Reply που είναι Unicast και είναι η απάντηση με την MAC Διεύθυνση</li>
@@ -38,23 +32,15 @@
                         <ol>
                             <li>Η MAC αποστολέα είναι γνωστή</li>
                             <li>Η MAC παραλήπτη είναι Broadcast, γιατί απευθύνεται σε όλους του Η/Υ του δίκτυο</li>
-                        </ol>
-                        
+                        </ol>     
                     </p>
-
                     <h3 class="highlight_black">ARP Reply</h3>
-                    <p>
-                        Η συσκευή που θα βρει ότι η IP αποστολέα στο arp reguest είναι η δική της θα απάντηση με ένα ARP Reply.<br>
-Το ARP Reply είναι UNICAST αφού γνωρίζει την IP και MAC διεύθυνση του παραλήπτη (από το ARP Reguest)<br>
-Στο ARP πακέτο  ο κωδικός λειτουργίας θα είναι 2
-
-                    </p>
+                    <p> Η συσκευή που θα βρει ότι η IP αποστολέα στο arp reguest είναι η δική της θα απάντηση με ένα ARP Reply.<br> 
+                        Το ARP Reply είναι UNICAST αφού γνωρίζει την IP και MAC διεύθυνση του παραλήπτη (από το ARP Reguest)<br>
+                        Στο ARP πακέτο  ο κωδικός λειτουργίας θα είναι 2 </p>
                 </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
-
         </div> <!--Τέλος container-->
-        
-        <!-- Footer -->
-        <footer id="add-social"></footer><script src="https://grcodeclub.gr/js/add/social.js"></script>
+       <footer id="addFooter"></footer>    <!-- Footer -->
     </body>
 </html>
